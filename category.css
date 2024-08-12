@@ -1,0 +1,14 @@
+.piture {
+  width: 270px;
+  height: 270px;
+  border-radius: 2px;
+}
+.heading p{
+  white-space: wrap;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 370px;
+}
+body, button {
+  font-family: Raleway;
+}
