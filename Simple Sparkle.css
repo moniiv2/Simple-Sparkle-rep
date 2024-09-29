@@ -1,10 +1,51 @@
-/* body {
-  font-family: ;
-} */
-
+body {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
 body, button {
   font-family: Raleway;
 }
+
+/* this is for the navigation bar */
+.topnav {
+  background-color: black;
+  /* overflow: hidden; */
+  position: fixed;
+  width: 100%;
+  max-height: 46px;
+  z-index: 300;
+  border-radius: 0.8rem;
+}
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a:hover {
+  color: black;
+  background-color: white;
+}
+.topnav a:active {
+  background-color: grey;
+  color: black;
+}
+.cart-con {
+  color: white;
+  float: inline-end;
+  font-size: 26px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.cart-con:hover {
+  color: black;
+  background-color: white;
+}
+/* for the main page, i know the names are messy just bare with me */
 .box2 button, .butt2 {
   padding: 14px;
   border-radius: 2rem;
@@ -70,6 +111,15 @@ body, button {
   font-size: 50px;
   position: relative;
   padding: 4rem 0 1rem 0;
+  margin-left: 18px;
+}
+.mt4 {
+  font-size: 44px;
+  margin: 0;
+}
+.mt5 {
+  font-size: 25px;
+  margin: 1.5rem 0 17px 0;
 }
 .butt1 {
   position: absolute;
@@ -95,6 +145,7 @@ body, button {
 }
 .bottle {
   white-space: wrap;
+  margin-left: 18px;
 }
 .tag {
   vertical-align: middle;
@@ -132,6 +183,14 @@ body, button {
   height: 250px;
   border-radius: 3px;
 }
+/*the all products page*/
+.product-box1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  padding-left: 1.5rem;
+}
+/*the buttons*/
 .whale {
   color: black;
   border-radius: 2px;
@@ -149,4 +208,85 @@ body, button {
 }
 .orange {
   margin-bottom: 2.5rem;
+  width: 250px;
+}
+/* .orange-bottom {
+  margin-left: 1.8rem;
+} */
+
+/* this is for each product's page */
+.inner-box5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 1rem;
+  padding: 0 6rem 0 6rem;
+}
+ 
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .inner-box5 {
+    grid-template-columns: 1fr;
+  }
+  .bracelet-column1, .bracelet-details {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.heading p {
+  padding: 0 9rem 1.5rem 9rem;
+  text-align: justify;
+}
+.bracelet-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bracelet-details {
+  padding: 2rem 0 0 22px;
+}
+.bracelet-column1 {
+  width: 220px;
+  height: 200px;
+  border-radius: 4px;
+  padding-left: 2.5rem;
+}
+/* the about page */
+.about-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 3.8rem;
+  column-gap: 10px;
+}
+.about-logo {
+  border-radius: 2rem;
+  width: 400px;
+  height: 500px;
+  border: 1px black solid;
+}
+.about-paragraph {
+  text-align: left;
+}
+/* cart page */
+.cart {
+  display: grid;
+  grid-template-columns: 65% 30%;
+  column-gap: 2rem;
+}
+.products-in-cart {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.check-out {
+  margin-top: 1.5rem;
+  border: 2px black solid;
+  border-radius: 7px;
+  background-color: rgb(224, 224, 224);
+  height: 70%;
+}
+.check-out h1 {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
 }
